@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Thinkopen_Customeraddress>
+            <version>1.0.0</version>
+        </Thinkopen_Customeraddress>
+    </modules>
+    <frontend>
+        <routers>
+            <customer>
+                <args>
+                    <modules>
+                        <Thinkopen_Customeraddress before="Mage_Customer_AddressController">Thinkopen_Customeraddress</Thinkopen_Customeraddress>
+                    </modules>
+                </args>
+            </customer>
+        </routers>
+    </frontend>
+    <global>
+        <models>
+            <thinkopen_customeraddress_Model>
+                <class>Thinkopen_Customeraddress_Model</class>
+            </thinkopen_customeraddress_Model>
+            <checkout>
+                <rewrite>
+                    <!-- Model -->
+                    <type_onepage>Thinkopen_Customeraddress_Model_Type_Onepage</type_onepage>
+                </rewrite>
+            </checkout>
+        </models>
+    </global>
+</config>

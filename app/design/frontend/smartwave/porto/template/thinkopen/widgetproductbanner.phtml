@@ -1,0 +1,92 @@
+<div class="col-main" style="border: 1px solid #efefef; margin-top: 4%; margin-bottom: 4%;">
+   <?php 
+    
+    
+    $original_price =  number_format($this->model['price'], 2, ',', '');
+    if($this->model['special_price']!=NULL){
+        $special = number_format($this->model['special_price'], 2, ',', '');
+        if($this->model['price_promotion']!=NULL){
+            $promotion = number_format($this->model['price_promotion'], 2, ',', '');
+            if($special<$promotion){
+                $price=$special;
+                $discount=(($original_price - $special)/$original_price)*100;
+            }
+            else{
+                $price=$promotion;
+                $discount=(($original_price - $promotion)/$original_price)*100;
+            }
+        }
+        else{
+            $price = $special;
+            $discount=(($original_price - $special)/$original_price)*100;
+        }
+        
+    }
+    else{
+        if($this->model['price_promotion']!=NULL){
+            $promotion = number_format($this->model['price_promotion'], 2, ',', '');
+            $price = $promotion;
+            $discount=(($original_price - $promotion)/$original_price)*100;
+        }
+        else{
+            $price=$original_price;
+            $discount = 0;
+        }
+    }
+    
+   ?>
+    <div class="row">
+        <div class="col-sm-1">
+            <div class="label-deal">
+                <div style="position: absolute; top: 5px; left: 20px; color: #FFFFFF">Sconto</div>
+                <div style="font-size: 20px; position: absolute; top: 25px; left: 20px; color: #FFFFFF"><b><?php echo round($discount)?>%</b></div>
+            </div>
+
+        </div>
+        <div class="col-sm-5">
+            <img class src="<?php echo Mage::getBaseUrl('media') . 'catalog' . DS . 'product' . $this->model['image']; ?>" style="width: 100%;">
+        </div>
+        <div class="col-sm-6">
+            <div style="text-align: right; margin-top: 45%; color: #FFFFFF; background-color: #b74173; padding: 8%; margin: 8%;">
+                <img src="<?php echo Mage::getBaseUrl('skin') . 'frontend/smartwave/porto/images/logo_banner_waytech.png' ?>">
+                <p style="text-transform: uppercase; font-size: 30px;"><b><?php echo $this->model['name']; ?></b></p>
+                <div>a partire da</div>     
+                <div style="text-transform: uppercase; font-size: 30px;"><span style="font-size: 20px;">€</span><b> <?php echo $price;
+        
+       ?></b></div>
+                <hr></hr>
+                <a class="btn btn-default" style="border: 1px solid #fff; background-color: #b74173; font-weight: 600; position: absolute; right: 18%; margin-top: 5%;" href="<?php echo Mage::getBaseUrl() . $this->model['url_path'] ?>">VISUALIZZA PRODOTTO</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10" style="text-align: center;">
+            <p><?php echo $this->model['short_description']; ?></p>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+
+</div>
+
+
+<style>
+    
+    .label-deal {
+        width: 0; 
+        height: 0; 
+        border-left: 0px solid transparent;
+        border-right: 100px solid transparent;
+       
+        border-top: 100px solid #b74173;
+    }
+    
+    .btn:hover, .btn:focus{
+        opacity: 100;
+        color: #FFFFFF;
+    }
+
+</style>

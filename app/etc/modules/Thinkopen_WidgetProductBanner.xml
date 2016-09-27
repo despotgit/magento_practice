@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Thinkopen_WidgetProductBanner>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Thinkopen_WidgetProductBanner>
+        <depends>
+            <Mage_Cms />
+        </depends>
+    </modules>
+</config>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<widgets>
+    <widgetproductbanner_homebanner type="widgetproductbanner/homebanner">
+        <name>Home Banner</name>
+        <description type="desc">Home Banner Widget</description>
+        <parameters>
+            <homebanner_options>
+                <label>Banner Options</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+                <source_model>widgetproductbanner/options</source_model>
+            </homebanner_options>
+        </parameters>
+    </widgetproductbanner_homebanner>
+</widgets>

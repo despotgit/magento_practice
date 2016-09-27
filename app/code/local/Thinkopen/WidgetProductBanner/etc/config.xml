@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Thinkopen_WidgetProductBanner>
+            <version>1.0.0</version>
+        </Thinkopen_WidgetProductBanner>
+    </modules>
+    <global>
+        <helpers>
+            <widgetproductbanner>
+                <class>Thinkopen_WidgetProductBanner_Helper</class>
+            </widgetproductbanner>
+        </helpers>
+        <blocks>
+            <widgetproductbanner>
+                <class>Thinkopen_WidgetProductBanner_Block</class>
+            </widgetproductbanner>
+        </blocks>
+        <models>
+            <widgetproductbanner>
+                <class>Thinkopen_WidgetProductBanner_Model</class>
+            </widgetproductbanner>
+        </models>
+    </global>
+</config>

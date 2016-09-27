@@ -1,0 +1,20 @@
+/**
+ * WARNING: Do not change this file. Your changes will be lost.
+ * 2016-09-22 13:48:45 */
+
+@media(min-width:992px){
+	.cms-index-index .header-container.type13 {
+		position: absolute;
+		width: 100%;
+		background-color: rgba(249,249,249, 0.75);
+		z-index: 1;
+	}
+}
+
+.footer-top {
+	padding: 0;
+}
+.header-container.type13 .welcome-msg, .header-container.type13 .selectbox .select, .header-container.type13 .compare-link>a,
+.header-container.type13 .search-area a.search-icon {
+    color: #777;
+}
