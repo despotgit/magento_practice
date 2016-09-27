@@ -24,7 +24,26 @@
     
     <!-- Configure our module's behavior in the global scope -->
     <global>
+    
+        <!-- Defining models -->
+        <models>
 
+            <!--
+                Unique identifier in the model's node.
+                By convention, we put the module's name in lowercase.
+            -->
+            <smashingmagazine_logproductupdate>
+
+                <!--
+                    The path to our models directory, with directory
+                    separators replaced by underscores
+                -->
+                <class>SmashingMagazine_LogProductUpdate_Model</class>
+
+            </smashingmagazine_logproductupdate>
+
+        </models>
+        
         <!-- Defining an event observer -->
         <events>
 
