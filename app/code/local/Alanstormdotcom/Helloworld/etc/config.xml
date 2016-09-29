@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>    
+    <modules>
+        <Alanstormdotcom_Helloworld>
+            <version>0.1.0</version>
+        </Alanstormdotcom_Helloworld>
+    </modules>
+</config>

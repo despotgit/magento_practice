@@ -460,7 +460,7 @@ final class Mage
      */
     public static function getModel($modelClass = '', $arguments = array())
     {
-        return self::getConfig()->getModelInstance($modelClass, $arguments);
+    	return self::getConfig()->getModelInstance($modelClass, $arguments);
     }
 
     /**
