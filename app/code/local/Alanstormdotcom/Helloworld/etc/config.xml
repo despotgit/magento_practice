@@ -6,4 +6,27 @@
             <version>0.1.0</version>
         </Alanstormdotcom_Helloworld>
     </modules>
+    <frontend>
+        <routers>
+        
+            <!-- the <helloworld> tagname appears to be arbitrary, but by 
+            convention is should match the frontName tag below-->
+            <helloworld> 
+                <use>standard</use>
+                <args>
+                    <module>Alanstormdotcom_Helloworld</module>
+                    <frontName>helloworld</frontName>
+                </args>
+            </helloworld>
+            
+            <soh> 
+                <use>standard</use>
+                <args>
+                    <module>Alanstormdotcom_Helloworld</module>
+                    <frontName>soh</frontName>
+                </args>
+            </soh>
+        
+        </routers>
+    </frontend>
 </config>
