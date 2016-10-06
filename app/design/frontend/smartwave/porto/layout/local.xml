@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <layout version="0.1.0">
-    <helloworld_index_index>
+    <demodule_foo_index>
         <reference name="root">
             <block type="page/html" name="root" template="simple_page.phtml">
                 <block type="page/template_links" name="top.links"/>
@@ -9,9 +9,9 @@
             </block>
             
         </reference>
-    </helloworld_index_index>
-    <helloworld_index_goodbye>
+    </demodule_foo_index>
+    <demodule_foo_goodbye>
         <update handle="helloworld_index_index" />
-    </helloworld_index_goodbye>
+    </demodule_foo_goodbye>
 </layout>
    
