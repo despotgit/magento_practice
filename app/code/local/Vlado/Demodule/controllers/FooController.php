@@ -3,7 +3,7 @@
 class Vlado_Demodule_FooController extends Mage_Core_Controller_Front_Action {        
 	public function indexAction() {
 	   
-		echo "From Foo controller indexAction in Vlado Namespace";
+		echo "From Foo controller indexAction in Vlado Namespace Demodule module";
 		
 		$this->loadLayout();
 	    $this->renderLayout();

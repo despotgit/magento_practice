@@ -11,7 +11,7 @@
         </reference>
     </demodule_foo_index>
     <demodule_foo_goodbye>
-        <update handle="helloworld_index_index" />
+        <update handle="foo_index_goodbye" />
     </demodule_foo_goodbye>
 </layout>
    
