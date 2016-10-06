@@ -1,11 +1,9 @@
 <?php 
 
-class Alanstormdotcom_Soh_IndexController extends Mage_Core_Controller_Front_Action {        
+class Alanstormdotcom_Helloworld_FooController extends Mage_Core_Controller_Front_Action {        
 	public function indexAction() {
-	    //remove our previous echo
-	    //echo 'Hello Index!';
-	    
-		echo "faruk";
+	   
+		echo "from foo controller indexAction";
 		
 		return;
 		
@@ -15,7 +13,8 @@ class Alanstormdotcom_Soh_IndexController extends Mage_Core_Controller_Front_Act
 	}
     
     public function goodbyeAction() {
-    	echo "Goodbye!";
+    	
+    	echo "from foo controller goodbyeAction";
     	
     	return;
     	

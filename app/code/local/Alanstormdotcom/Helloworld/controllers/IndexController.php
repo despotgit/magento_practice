@@ -3,7 +3,7 @@
 class Alanstormdotcom_Helloworld_IndexController extends Mage_Core_Controller_Front_Action {        
 	public function indexAction() {
 	   
-		echo "faruk";
+		echo "faruka";
 		
 		return;
 		
@@ -14,7 +14,7 @@ class Alanstormdotcom_Helloworld_IndexController extends Mage_Core_Controller_Fr
     
     public function goodbyeAction() {
     	
-    	echo "Goodbye!";
+    	echo "Goodbye A!";
     	
     	return;
     	
