@@ -63,9 +63,10 @@ class Nofrills_Booklayout_IndexController extends Mage_Core_Controller_Front_Act
 		
 		$layout = Mage::getSingleton('core/layout');
 		//print "<pre>"; print_r($layout); print "</pre>";exit;
-		$block = $layout->createBlock ('core/template','root');
-		$block->setTemplate('nofrills/helloworld-2.phtml');
-		echo $block->toHtml();
+		$block = $layout->createBlock('nofrills_booklayout/helloworld','root');
+		$block -> setTemplate('nofrills/helloworld-2.phtml');
+		
+		$layout -> addOutputBlock("root") -> setDirectOutput(true) -> getOutput();
 		
 		
 	} 
